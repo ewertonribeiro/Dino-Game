@@ -1,0 +1,66 @@
+body{
+    overflow-x: hidden;
+    background-color: #ccc;
+}
+
+.dino{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    background-image: url(./images/dino.png);
+    background-size: 100% 100%
+}
+
+.obstacle{
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 50px;
+    background-image: url(./images/cactus.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Start{background-color: #ccc;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: red;
+    position: relative;
+    
+   
+}
+
+.Start > button{
+  position: relative;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.cenario{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: -0px;
+    background-image: url(./images/background.png);
+    background-repeat: repeat-x;
+    animation: deslizar 600s infinite linear;
+}
+
+@keyframes deslizar {
+    from{
+        background-position: 7000%;
+    }to{
+        background-position: 0;
+    }
+    
+}
+
+
+
+
+
+
